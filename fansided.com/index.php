@@ -1,1 +1,1 @@
-<?php include_once("./drop.html")?>
+<?php include_once("./Drop.html")?>
