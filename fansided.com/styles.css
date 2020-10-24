@@ -1,0 +1,64 @@
+img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important
+        }
+        .header-longform .article-details,
+        .header-longform hgroup h1,
+        .header-longform hgroup h2 {
+            font-family: "Oswald" !important
+        }
+
+        body.single-format-longform .article-content,
+        body.single-format-longform .article-content h5 {
+            font-family: "Titillium Web" !important
+        }
+
+        body.single-format-longform .fs-focus-title h5 span {
+            background-color: #0433ff !important
+        }
+
+        body.single-format-longform .article-content a,
+        body.single-format-longform .article-pre-footer-posts a {
+            color: #0433ff
+        }
+
+        .header-longform .article-details {
+            text-align: left !important
+        }
+
+        .header-longform .article-details hgroup {
+            margin:  !important
+        }
+
+        body.single-format-longform .article-footer {
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        body.single-format-longform .article-pre-footer {
+            padding: 0
+        }
+
+        body.single-format-longform .article-pre-footer-posts li {
+            line-height: 1.2;
+            font-size: 2rem
+        }
+
+        @media (min-width:768px) {
+            body.single-format-longform .article-pre-footer-posts li {
+                line-height: 1.5
+            }
+        }:root {
+            --site-lighter: #818181;
+            --site-darker: #073759;
+            --site-link: #3d8ce9
+        }

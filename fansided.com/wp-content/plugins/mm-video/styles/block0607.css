@@ -1,0 +1,247 @@
+/**
+ * Note that these styles are loaded *after* common styles, so that
+ * editor-specific styles using the same selectors will take precedence.
+ */
+
+
+.mm-video-block {
+	background: #f7f8fb;
+	padding: 28px 28px 14px 28px;
+	font-family: Arial,Helvetica,sans-serif!important;
+}
+
+.mm-video-block h2 {
+	color: #181818;
+	font-size: 18px!important;
+	line-height: 20px;
+	font-weight: bold!important;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.mm-video-block h3 {
+	color: #181818;
+	font-size: 14px!important;
+	line-height: 20px;
+	font-weight: bold!important;
+	margin-top: 0;
+	margin-bottom: 7px;
+}
+
+.mm-video-block h2::before {
+	content: '';
+	display: none!important;
+}
+
+.mm-video-block .caption {
+	color: #181818;
+	background-color: transparent;
+	border: none!important;
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+	padding: 0!important;
+}
+
+.mm-video-block .caption:focus {
+	border: none!important;
+	box-shadow: none!important;
+}
+	
+.mm-video-block input[type="search"] {
+	border: 1px solid #d8dbed;
+	border-radius: 50px;
+	height: 36px;
+	padding: 8px 16px;
+	font-size: 14px;
+	line-height: 20px;
+	width: 316px;
+}
+
+.mm-video-block input[type="search"]:focus {
+	border: 1px solid #d8dbed;
+	box-shadow: none;
+}
+
+.mm-video-block input::placeholder {
+	color: #808080;
+}
+
+.mm-video-block ul {
+	height: 360px;
+	overflow: scroll;
+	background: #ffffff;
+	margin-bottom: 14px!important;
+}
+
+.mm-video-block ul li {
+	padding: 16px;
+	list-style: none;
+	margin: 0;
+	border-bottom: 1px solid #e5e7f3;
+	clear: both;
+	position: relative;
+}
+
+.mm-video-block ul .empty {
+	border-bottom: none;
+	text-align: center;
+	padding: 36px;
+	color: #181818;
+	box-shadow: none!important;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.mm-video-block ul li .content {
+	height: 72px;
+	position: relative;
+}
+
+.mm-video-block ul li .content::after {
+	height: 72px;
+	content: "";
+	display: block;
+	position: absolute;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, #ffffff);
+	width: 200px;
+    top: 0;
+	right: 0;
+	z-index: 0;
+}
+
+.mm-video-block ul li .title {
+	font-size: 14px;
+	line-height: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 4px;
+	color: #181818;
+}
+
+.mm-video-block ul li .info {
+	font-size: 12px;
+	line-height: 16px;
+	display: block;
+	color: #808080;
+}
+
+.mm-video-block ul li .action {
+	opacity: 0;
+	border-radius: 16px;
+	background-color: #4f7dff;
+	width: 76px;
+	height: 32px;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+	font-weight: 300;
+	cursor: pointer;
+	position: absolute;
+	z-index: 1;
+	right: 20px;
+	top: 20px;
+	transition: opacity .3s;
+	border: none;
+}
+
+.mm-video-block ul li:hover .action {
+	opacity: 1;
+}
+
+.mm-video-block ul li:hover .action:hover {
+	opacity: .5;
+}
+
+.mm-video-block ul li .uid {
+	font-size: 12px;
+	line-height: 16px;
+	margin-top: 15px;
+	color: #808080;
+}
+
+.mm-video-block ul li img {
+	background: #868686;
+	width: 128px;
+	height: 72px;
+	display: block;
+	overflow: hidden;
+	opacity: 0;
+}
+
+.mm-video-block ul li .media {
+	float: left;
+	position: relative;
+	margin-right: 12px;
+}
+
+.mm-video-block ul li .media::after {
+	position: absolute;
+	content: '';
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 128px;
+	height: 72px;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 39%, #000000);
+}
+
+.mm-video-block .playlists ul li .media img {
+	background: transparent;
+	width: 72px;
+	height: 72px;
+}
+
+.mm-video-block .playlists ul li .media::after {
+	display: none;
+}
+
+.mm-video-block ul li .media .duration {
+	position: absolute;
+	color: #fff;
+	font-size: 10px;
+	line-height: 12px;
+	bottom: 3px;
+	left: 4px;
+	z-index: 2;
+}
+
+.mm-video-block ul li img.loaded {
+	opacity: 1;
+	transition: opacity .3s;
+}
+
+.mm-video-block ul li:hover {
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	transition: box-shadow .3s;
+}
+
+.mm-video-block .preview {
+	min-height: 310px;
+	background: #000000;
+	float: none;
+	overflow: hidden;
+	text-align: center;
+	line-height: 300px;
+	position: relative;
+	padding-top: calc(59.25% + 28px);
+	margin: -14px -14px 0 -14px;
+}
+
+.mm-video-block .preview iframe {
+	position: absolute;
+	border: 0;
+	left: 0;
+	top: 0;
+}
+
+.mm-video-block .search-box input {
+	margin-bottom: 16px;
+}
+
+img.mm-video-embed {
+	max-width: 480px;
+}

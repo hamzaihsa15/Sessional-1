@@ -1,0 +1,1 @@
+mm_video_data = mm_video_data || {};

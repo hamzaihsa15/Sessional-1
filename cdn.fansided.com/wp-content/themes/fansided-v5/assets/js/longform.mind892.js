@@ -1,0 +1,1 @@
+function fsLongformScroll(){jQuery(".fs-focus-title h5").wrapInner("<span>"),jQuery(".header-longform hgroup").css({opacity:1-jQuery(window).scrollTop()/600})}jQuery(document).ready(function(o){}),jQuery(window).scroll(function(){requestAnimationFrame(fsLongformScroll)});
